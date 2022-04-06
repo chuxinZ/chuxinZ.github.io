@@ -1,3 +1,5 @@
+This is Chuxin Zhang's personal website.
+The theme is from https://github.com/chuxinZ/PointingToTheMoon.git.
 # If you want to use this theme
 
 Please read [this link](https://yk-liu.github.io/jekyll/Jekyll-Build.html#what-should-i-modify). 

@@ -55,7 +55,11 @@ footer {
     color: #FFFFFF;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    margin-top: 2rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
 }

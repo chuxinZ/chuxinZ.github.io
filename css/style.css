@@ -11,38 +11,42 @@ body {
 /* Header and Navigation styles */
 header {
     background-color: #004099; /* UCLouvain blue */
-    padding: 1rem;
+    padding: 0; /* Remove padding from header */
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Use flexbox layout */
-    justify-content: space-around; /* Evenly distribute navigation items */
+    display: flex;
+    justify-content: space-around;
+    height: 100%; /* Ensure full height */
 }
 
 nav ul li {
-    flex: 1; /* Each navigation item occupies equal space */
-    text-align: center;
+    flex: 1;
+    display: flex; /* Use flexbox for li as well */
 }
 
 nav ul li a {
-    display: block;
-    color: #FFFFFF; /* Default white text */
+    flex: 1; /* Make the anchor fill the li */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
     text-decoration: none;
-    padding: 10px 0;
+    padding: 1rem 0; /* Adjust padding to control height */
     font-weight: bold;
-    transition: all 0.3s ease; /* Add transition effect */
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Slightly lighten on hover */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 nav ul li a.active {
-    background-color: #FFFFFF; /* White background for active item */
-    color: #004099; /* Blue text for active item */
+    background-color: #FFFFFF;
+    color: #004099;
 }
 
 /* Hero image styles */

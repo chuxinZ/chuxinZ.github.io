@@ -1,5 +1,3 @@
-<!-- css/style.css -->
-/* UCLouvain-inspired styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -18,6 +16,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     text-align: center;
+    margin: 0;
 }
 
 nav ul li {
@@ -31,14 +30,64 @@ nav ul li a {
     font-weight: bold;
 }
 
-main {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+nav ul li a.active {
+    text-decoration: underline;
 }
 
-h1, h2, h3 {
+.hero-image {
+    background-image: url('path/to/your/background-image.jpg');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 2rem;
+}
+
+.profile-info h1 {
+    margin-bottom: 0.5rem;
+}
+
+.social-links a {
     color: #004099;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #004099;
+    border-bottom: 2px solid #004099;
+    padding-bottom: 0.5rem;
+}
+
+footer {
+    background-color: #004099;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
 a {
@@ -50,21 +99,10 @@ a:hover {
     text-decoration: underline;
 }
 
-footer {
-    background-color: #004099;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 1rem;
-}
-
-nav ul li a.active {
-    text-decoration: underline;
-    font-weight: bold;
+.hero-image {
+    background-image: url('../assets/images/background.jpg');
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

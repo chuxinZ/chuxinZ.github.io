@@ -35,7 +35,7 @@ nav ul li a.active {
 }
 
 .hero-image {
-    background-image: url('path/to/your/background-image.jpg');
+    background-image: url('../assets/images/background.jpg');
     height: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -97,12 +97,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-.hero-image {
-    background-image: url('../assets/images/background.jpg');
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }

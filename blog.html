@@ -1,49 +1,32 @@
-<!-- blog.html -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Your Name</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">About Me</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="blog.html" class="active">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <h1>Blog</h1>
-        <section>
-            <h2>Categories</h2>
-            <ul>
-                <li><a href="#category1">Category 1</a></li>
-                <li><a href="#category2">Category 2</a></li>
-            </ul>
-        </section>
-        <section id="category1">
-            <h2>Category 1</h2>
-            <article>
-                <h3><a href="blog-post-1.html">Blog Post Title 1</a></h3>
-                <p>Brief description or excerpt...</p>
-            </article>
-        </section>
-        <section id="category2">
-            <h2>Category 2</h2>
-            <article>
-                <h3><a href="blog-post-2.html">Blog Post Title 2</a></h3>
-                <p>Brief description or excerpt...</p>
-            </article>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
-    </footer>
-    <script src="js/script.js"></script>
-</body>
-</html>
+<h1>Blog</h1>
+
+<section class="blog-categories">
+    <h2>Categories</h2>
+    <ul>
+        <li><a href="#category1">Category 1</a></li>
+        <li><a href="#category2">Category 2</a></li>
+        <!-- Add more categories as needed -->
+    </ul>
+</section>
+
+<section id="category1" class="blog-category">
+    <h2>Category 1</h2>
+    <article class="blog-post">
+        <h3><a href="#blog-post-1">Blog Post Title 1</a></h3>
+        <p class="post-meta">Posted on [Date] by Chuxin Zhang</p>
+        <p>Brief description or excerpt of the blog post... [Add a short summary or introduction to your blog post here.]</p>
+        <a href="#blog-post-1" class="read-more">Read More</a>
+    </article>
+    <!-- Add more blog posts in this category as needed -->
+</section>
+
+<section id="category2" class="blog-category">
+    <h2>Category 2</h2>
+    <article class="blog-post">
+        <h3><a href="#blog-post-2">Blog Post Title 2</a></h3>
+        <p class="post-meta">Posted on [Date] by Chuxin Zhang</p>
+        <p>Brief description or excerpt of the blog post... [Add a short summary or introduction to your blog post here.]</p>
+        <a href="#blog-post-2" class="read-more">Read More</a>
+    </article>
+    <!-- Add more blog posts in this category as needed -->
+</section>

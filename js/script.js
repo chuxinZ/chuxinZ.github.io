@@ -30,3 +30,4 @@ function setActiveNavItem(clickedItem) {
     });
     clickedItem.classList.add('active');
 }
+

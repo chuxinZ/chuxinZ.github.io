@@ -173,3 +173,12 @@ a:hover {
 .education-info p {
     margin: 0;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+main section {
+    min-height: 100vh;
+    padding-top: 60px; /* Adjust based on your header height */
+}

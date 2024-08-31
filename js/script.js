@@ -1,4 +1,3 @@
-// You can add more JavaScript functionality as needed
 document.addEventListener('DOMContentLoaded', function() {
     loadContent('about');
     loadContent('research');
@@ -11,6 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector(this.getAttribute('href')).scrollIntoView({
                 behavior: 'smooth'
             });
+            setActiveNavItem(this);
         });
     });
 });
@@ -22,4 +22,11 @@ function loadContent(section) {
             document.getElementById(section).innerHTML = html;
         })
         .catch(error => console.error('Error loading ' + section + ' content:', error));
+}
+
+function setActiveNavItem(clickedItem) {
+    document.querySelectorAll('nav a').forEach(item => {
+        item.classList.remove('active');
+    });
+    clickedItem.classList.add('active');
 }

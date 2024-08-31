@@ -138,3 +138,38 @@ a {
 a:hover {
     text-decoration: underline; 
 }
+
+/* education style */
+.education-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.school-logo {
+    flex: 0 0 100px;
+    margin-right: 2rem;
+}
+
+.school-logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.education-info {
+    flex: 1;
+}
+
+.education-info h3 {
+    margin: 0;
+    color: #004099;
+}
+
+.education-info h4 {
+    margin: 0.5rem 0;
+}
+
+.education-info p {
+    margin: 0;
+}

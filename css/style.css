@@ -55,6 +55,7 @@ section {
 .profile-photo {
     width: 200px;
     height: 200px;
+
     border-radius: 50%;
     margin-right: 2rem;
 }
@@ -67,6 +68,21 @@ section {
     margin: 0;
 }
 
+<<<<<<< HEAD
+=======
+/* Section styles */
+section {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    color: #004099;
+    border-bottom: 2px solid #004099;
+    padding-bottom: 0.5rem;
+}
+
+/* Footer styles */
+>>>>>>> parent of 410d4d5 (Big Image)
 footer {
     background-color: #004099;
     color: white;

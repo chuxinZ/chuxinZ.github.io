@@ -1,8 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 初始加载所有内容
+    // Load all sections' content on initial load
     loadAllContent();
 
-    // 设置导航链接的事件监听器
+    // Set up navigation links' event listeners
     setupNavigation();
 });
 
@@ -16,7 +16,7 @@ function setupNavigation() {
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
-            const targetId = this.getAttribute('href').substring(1); // 移除 '#' 符号
+            const targetId = this.getAttribute('href').substring(1); // Remove '#' symbol
             document.getElementById(targetId).scrollIntoView({
                 behavior: 'smooth'
             });

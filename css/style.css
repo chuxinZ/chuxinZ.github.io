@@ -12,6 +12,10 @@ body {
 header {
     background-color: #004099; /* UCLouvain blue */
     padding: 0; /* Remove padding from header */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 nav ul {
@@ -63,6 +67,7 @@ main {
     max-width: 800px;
     margin: 0 auto;
     padding: 2rem;
+    padding-top: 80px; /* Adjust based on your header height */
 }
 
 /* Profile section styles */
@@ -176,9 +181,4 @@ a:hover {
 
 html {
     scroll-behavior: smooth;
-}
-
-main section {
-    min-height: 100vh;
-    padding-top: 60px; /* Adjust based on your header height */
 }

@@ -1,17 +1,14 @@
-/* General styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #FFFFFF;
-    color: #004099;
+    color: #333;
 }
 
-/* Header and Navigation styles */
 header {
-    background-color: #004099; /* UCLouvain blue */
-    padding: 0; /* Remove padding from header */
+    background-color: #004099;
+    padding: 1rem 0;
     position: fixed;
     top: 0;
     width: 100%;
@@ -24,53 +21,31 @@ nav ul {
     margin: 0;
     display: flex;
     justify-content: space-around;
-    height: 100%; /* Ensure full height */
-}
-
-nav ul li {
-    flex: 1;
-    display: flex; /* Use flexbox for li as well */
 }
 
 nav ul li a {
-    flex: 1; /* Make the anchor fill the li */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #FFFFFF;
+    color: white;
     text-decoration: none;
-    padding: 1rem 0; /* Adjust padding to control height */
-    font-weight: bold;
-    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
 }
 
-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
+nav ul li a:hover,
 nav ul li a.active {
-    background-color: #FFFFFF;
+    background-color: white;
     color: #004099;
 }
 
-/* Hero image styles */
-.hero-image {
-    background-image: url('../assets/images/background.jpg');
-    height: 300px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* Main content styles */
 main {
-    max-width: 800px;
+    max-width: 960px;
     margin: 0 auto;
     padding: 2rem;
-    padding-top: 80px; /* Adjust based on your header height */
+    padding-top: 5rem;
 }
 
-/* Profile section styles */
+section {
+    margin-bottom: 2rem;
+}
+
 .profile-section {
     display: flex;
     align-items: center;
@@ -78,107 +53,23 @@ main {
 }
 
 .profile-photo {
-    width: 250px;
-    height: 250px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    object-fit: cover;
     margin-right: 2rem;
-}
-
-.profile-info {
-    flex: 1;
-    min-width: 250px; /* Ensure text doesn't get too squeezed */
 }
 
 .profile-info h1 {
     margin-bottom: 0.5rem;
 }
 
-.social-links a {
-    color: #004099;
-    font-size: 1.5rem;
-    margin-right: 1rem;
+.profile-info p {
+    margin: 0;
 }
 
-/* Responsive adjustment for smaller screens */
-@media (max-width: 600px) {
-    .profile-section {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-photo {
-        margin-right: 0;
-        margin-bottom: 1.5rem;
-    }
-}
-
-/* Section styles */
-section {
-    margin-bottom: 2rem;
-}
-
-h2 {
-    color: #004099;
-    border-bottom: 2px solid #004099;
-    padding-bottom: 0.5rem;
-}
-
-/* Footer styles */
 footer {
     background-color: #004099;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-}
-
-/* Link styles */
-a {
-    color: #004099; 
-    text-decoration: none; 
-}
-
-a:hover {
-    text-decoration: underline; 
-}
-
-/* education style */
-.education-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 2rem;
-}
-
-.school-logo {
-    flex: 0 0 100px;
-    margin-right: 2rem;
-}
-
-.school-logo img {
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
-}
-
-.education-info {
-    flex: 1;
-}
-
-.education-info h3 {
-    margin: 0;
-    color: #004099;
-}
-
-.education-info h4 {
-    margin: 0.5rem 0;
-}
-
-.education-info p {
-    margin: 0;
-}
-
-html {
-    scroll-behavior: smooth;
+    padding: 1rem 0;
 }
